@@ -1,0 +1,9 @@
+[
+  "selenium_start/tests/test_dev_tools.py::test_dev_tools",
+  "selenium_start/tests/test_ffsupport.py::test_ffsupport_page",
+  "selenium_start/tests/test_html.py::test_html_page",
+  "selenium_start/tests/test_site.py::test_mozilla_search",
+  "selenium_start/tests/test_site.py::test_mozilla_search_fail",
+  "selenium_start/tests/test_site.py::test_navigate_to_http_page",
+  "selenium_start/tests/test_site.py::test_edit_button_is_enabled_on_http_page"
+]

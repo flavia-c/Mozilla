@@ -1,0 +1,18 @@
+sudo: required
+dist: trusty
+language: python
+addons:
+  - chrome: stable
+python:
+  - "3.6"
+install:
+  - pip install tox
+script:
+  - tox
+
+before_install:
+ - wget https://chromedriver.storage.googleapis.com/LATEST_RELEASE
+ - wget https://chromedriver.storage.googleapis.com/$(cat LATEST_RELEASE)/chromedriver_linux64.zip
+ - unzip chromedriver_linux64.zip
+ - export PATH=$PATH:$(pwd)
+ - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
